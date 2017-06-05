@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TESTFORM</title>
+<script language="javascript">
+    function validateForm() {
+    var x = document.forms["TESTFORM"]["First Name"].value;
+	var x = document.forms["TESTFORM"]["Last Name"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+       
+</script>
+</head>
+<body>
+<form name="TESTFORM" onclick="return validateForm()">
+First Name:<input type:"text" name="First name" required>
+Last Name :<input type:"text" name="Last name"  required><br>
+User ID   :<input type:"text" ID="TEXT" required>
+Password  :<input type:"text" Password="TEXT" required><br>
+Country:
+<select>
+  <option value="INDIA">INDIA</option>
+  <option value="US">US</option>
+  <option value="CANADA">CANADA</option>
+  <option value="ENLAND">ENGLAND</option>
+  <option value="AUSTRALIA">AUSTRALIA</option>
+  <option value="GERMANY">GERMANY</option>
+  <option value="ITALY">ITALY</option>
+  <option value="BRAZIL">BRAZIL</option>
+</select><br>
+Hobbies:<input type="checkbox" name="Bike riding" 
+> bikeriding
+<input type="checkbox" name="cricket" >cricket
+<input type="checkbox" name="watching tv" >watching tv
+<input type="checkbox" name="vehicle" > reading books<br>
+  
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
